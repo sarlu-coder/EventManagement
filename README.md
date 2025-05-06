@@ -15,9 +15,9 @@ Make a database in mysql named "EventManagement".
 
 make an .env from .env.example
 
-php artisan migrate
-
 composer install
+
+php artisan migrate
 
 composer du
 
