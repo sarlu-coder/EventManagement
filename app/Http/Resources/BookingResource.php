@@ -23,6 +23,5 @@ class BookingResource extends JsonResource
             'updated_at'    => $this->updated_at,
             'attendees'     => Attendee::where('booking_id',$this->id)->get()->toArray(),
         ];
-        // return parent::toArray($request);
     }
 }
