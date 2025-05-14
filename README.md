@@ -21,4 +21,5 @@
 2. To use any api of event and booking add Auth Type as "Bearer Token" in Authorization header and put the received access token from auth api.
 3. Using the apis are self explanatory and adding and deleting attendees for a booking in "Create Bookings" and "Update Booking" attendees could be sent in an array as represented the collection.
 4. Added test cases file "EventMangementTestCases.xlsx" in root folder.
+5. Added architecture diagram "ServerlessArchitecture.drawio" in the root folder.
 
