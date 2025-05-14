@@ -37,7 +37,7 @@ class BookingController extends Controller
             'event_id'                  => ['required','numeric','exists:events,id',
                 function ($attribute, $value, $fail) {
                     $booking_limit = Booking::where('event_id',$value)->get()->count();
-                    if ($booking_limit > 10) {
+                    if ($booking_limit >= 1) {
                         $fail($attribute.' Overbooking not allowed.Only 10 bookings allowed per event.');
                     }
                 }
